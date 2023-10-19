@@ -8,7 +8,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your?',
+        message: 'What is the title of your project?',
     },
     {
         type: 'input',
@@ -26,16 +26,36 @@ const questions = [
         message: 'How do you use your project?',
     },
     {
+        type: 'input',
+        name: 'contribution',
+        message: 'What are your contribution guidelines?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'How do you use your test instructions?',
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'What license are you using for your project',
         choices: [, 'GNU', 'Apache', 'MIT', 'Mozilla', 'Creative Commons', 'None'],
+    },
+    {
+        type: 'input',
+        name: 'Github',
+        message: 'What is your Github username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile('./utils/README.md', GenerateMarkdown(data), (err) =>
+    fs.writeFile(`./README-folder/README.md`, GenerateMarkdown(data), (err) =>
     err ? console.log(err) : console.log('README made!'))
 }
 
