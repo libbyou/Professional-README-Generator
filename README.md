@@ -22,6 +22,8 @@
 
   After installation, type in 'node index.js' in your command-line. From there, a series of questions about your project will be asked. Please answer each one of the them. Once all of the questions have been answered, the application will take your answers and automatically generate a README.md that you can find in the README-folder in the utils folder.
 
+  ![Gif of App's Usage](./assets/readme-gen.gif)
+
   ## Contributing
 
   All are welcome to contribute! Before contributing, please fork the repo, create a local branch, and create a pull request for any changes you'd like to make. Following a code review, your code will be merged.
@@ -29,6 +31,11 @@
   ## Tests
 
   N/A
+
+  ## Technologies
+
+  - Node.js
+  - Inquirer.js
   
   ## License
   
