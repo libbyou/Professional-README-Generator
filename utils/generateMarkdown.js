@@ -64,14 +64,18 @@ function generateMarkdown(data) {
   ${data.test}
   
   ## License
+  
   ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
+
+  For more information about the license used for this project, please refer to the
+  [${data.license} License](${renderLicenseLink(data.license)})
+
 
   ## Questions
 
   For any questions, please feel free to check out my Github profile or reach out via email:
-  ${data.Github}
-  ${data.email}
+  - [Github Profile](${data.Github})
+  - Email: <${data.email}>
 
 `;
 }
